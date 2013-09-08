@@ -1,0 +1,21 @@
+<div id="main_body">
+  <h1>Post</h1>
+  <table>
+    <tr>
+      <th>Subject</th>
+      <th>Log</th>
+      <th></th>
+    </tr>
+
+    <% @posts.each do |r| %>
+        <tr>
+          <td><%= r.subject %></td>
+          <td><%= r.log %></td>
+          <td><%= link_to 'Edit', edit_post_path(r) %></td>
+        </tr>
+    <% end %>
+
+  </table>
+
+
+</div>

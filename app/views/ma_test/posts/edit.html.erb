@@ -1,0 +1,7 @@
+<%= simple_form_for @post do |f| %>    
+ 
+  <%= f.input :subject, :label => "Subject:" %> 
+  <%= f.input :log, :label => "Post:" %>  
+  
+  <%= f.button :submit, 'Save' %>  
+<% end %> 
